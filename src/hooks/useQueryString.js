@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import qs from 'query-string';
-
+//hook use for get data from url
 function useQueryString() {
   const location = useLocation();
   const queryString = useMemo(() => qs.parse(location.search), [location.search]);
